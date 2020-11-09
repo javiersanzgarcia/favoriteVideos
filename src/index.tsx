@@ -16,9 +16,19 @@ ReactDOM.render(
             <Navbar />
             <div className="container p-4">
                 <Switch>
-                    <Route path="/" component={VideoList} exact />
-                    <Route path="/new-video" component={VideoForm} />
-                    <Route path="/update/:id" component={VideoForm} />
+                    <Route
+                        path="/favoriteVideos/"
+                        component={VideoList}
+                        exact
+                    />
+                    <Route
+                        path="/favoriteVideos/new-video"
+                        component={VideoForm}
+                    />
+                    <Route
+                        path="/favoriteVideos/update/:id"
+                        component={VideoForm}
+                    />
                 </Switch>
                 <ToastContainer />
             </div>
