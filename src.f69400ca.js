@@ -44679,7 +44679,7 @@ var VideoItem = function (_a) {
     className: "d-flex justify-content-between"
   }, _react.default.createElement("h2", {
     onClick: function () {
-      return history.push("/update/" + video._id);
+      return history.push("/favoriteVideos/update/" + video._id);
     }
   }, video.title), _react.default.createElement("span", {
     className: "text-danger",
@@ -45152,7 +45152,7 @@ var VideoForm = function () {
             _a.label = 4;
 
           case 4:
-            history.push('/');
+            history.push('/favoriteVideos/');
             return [2
             /*return*/
             ];
@@ -45271,28 +45271,15 @@ var Navbar = function () {
     className: "container"
   }, _react.default.createElement(_reactRouterDom.Link, {
     className: "navbar-brand",
-    to: "/"
-  }, "My Faivorite Videos"), _react.default.createElement("button", {
-    className: "navbar-toggler",
-    type: "button",
-    "data-toggle": "collapse",
-    "data-target": "#navbarNav",
-    "aria-controls": "navbarNav",
-    "aria-expanded": "false",
-    "aria-label": "Toggle navigation"
-  }, _react.default.createElement("span", {
-    className: "navbar-toggler-icon"
-  })), _react.default.createElement("div", {
-    className: "collapse navbar-collapse",
-    id: "navbarNav"
-  }, _react.default.createElement("ul", {
+    to: "/favoriteVideos/"
+  }, "My Favorite Videos"), _react.default.createElement("ul", {
     className: "navbar-nav ml-auto"
   }, _react.default.createElement("li", {
     className: "nav-item"
   }, _react.default.createElement(_reactRouterDom.Link, {
     className: "nav-link",
-    to: "/new-video"
-  }, "Create New Video"))))));
+    to: "/favoriteVideos/new-video"
+  }, "Create New Video")))));
 };
 
 var _default = Navbar;
@@ -45325,14 +45312,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 _reactDom.default.render(_react.default.createElement(_react.default.StrictMode, null, _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_Navbar.default, null), _react.default.createElement("div", {
   className: "container p-4"
 }, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
-  path: "/",
+  path: "/favoriteVideos/",
   component: _VideoList.default,
   exact: true
 }), _react.default.createElement(_reactRouterDom.Route, {
-  path: "/new-video",
+  path: "/favoriteVideos/new-video",
   component: _VideoForm.default
 }), _react.default.createElement(_reactRouterDom.Route, {
-  path: "/update/:id",
+  path: "/favoriteVideos/update/:id",
   component: _VideoForm.default
 })), _react.default.createElement(_reactToastify.ToastContainer, null)))), document.getElementById('root')); // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
@@ -45368,7 +45355,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62934" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65059" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
