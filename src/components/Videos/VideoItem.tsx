@@ -26,7 +26,11 @@ export const VideoItem = ({ video, loadVideos }: IProps) => {
                 style={{ cursor: 'pointer' }}
             >
                 <div className="d-flex justify-content-between">
-                    <h2 onClick={() => history.push(`/update/${video._id}`)}>
+                    <h2
+                        onClick={() =>
+                            history.push(`/favoriteVideos/update/${video._id}`)
+                        }
+                    >
                         {video.title}
                     </h2>
                     <span

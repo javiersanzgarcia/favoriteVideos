@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
-                <Link className="navbar-brand" to="/">
+                <Link className="navbar-brand" to="/favoriteVideos/">
                     My Favorite Videos
                 </Link>
                 <button
@@ -22,7 +22,10 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/new-video">
+                            <Link
+                                className="nav-link"
+                                to="/favoriteVideos/new-video"
+                            >
                                 Create New Video
                             </Link>
                         </li>

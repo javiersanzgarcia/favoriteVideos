@@ -43,7 +43,7 @@ const VideoForm = () => {
             setVideo(initialState)
         }
 
-        history.push('/')
+        history.push('/favoriteVideos/')
     }
 
     const getVideo = async (id: string) => {
