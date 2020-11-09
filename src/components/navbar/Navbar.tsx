@@ -6,7 +6,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="container">
                 <Link className="navbar-brand" to="/">
-                    My Faivorite Videos
+                    My Favorite Videos
                 </Link>
                 <button
                     className="navbar-toggler"
